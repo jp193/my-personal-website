@@ -7,9 +7,12 @@ const redButton = document.getElementById('red')
 const blueButton = document.getElementById('blue')
 const pinkButton = document.getElementById('pink')
 const purpleButton = document.getElementById('purple')
+const randomButton = document.getElementById('random')
 
 
 redButton.addEventListener('click', () => document.body.style.backgroundColor = 'red')
 blueButton.addEventListener('click', () => document.body.style.backgroundColor = 'blue')
 pinkButton.addEventListener('click', () => document.body.style.backgroundColor = 'pink')
 purpleButton.addEventListener('click', () => document.body.style.backgroundColor = 'indigo')
+randomButton.addEventListener('click', () => document.body.style.background = `#${Math.floor(Math.random() * 0xffffff).toString(16)}`)
+  // ! document.body.style.background = `#${Math.random() * 0xffffff).toString(16)}`
